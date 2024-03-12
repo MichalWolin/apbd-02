@@ -5,5 +5,6 @@ public class Class
     public static void Main(string[] args)
     {
         Console.WriteLine("Hello APBD");
+        Console.WriteLine("Modyfikacja 1");
     }
 }
