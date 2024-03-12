@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-public class Class
+internal class Class
 {
     public static void Main(string[] args)
     {
@@ -8,5 +8,18 @@ public class Class
         Console.WriteLine("Modyfikacja 1");
         Console.WriteLine("Modyfikacja 2");
         Console.WriteLine("Modyfikacja 3");
+
+        int[] tab = { 1, 2, 3, 4 };
+        Console.WriteLine(Average(tab));
+    }
+
+    public static double Average(int[] tab)
+    {
+        int sum = 0;
+
+        foreach (var i in tab)
+            sum += i;
+
+        return (double)sum / tab.Length;
     }
 }
