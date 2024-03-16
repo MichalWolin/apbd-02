@@ -17,8 +17,8 @@ internal class Class
     {
         int sum = 0;
 
-        foreach (var i in tab)
-            sum += i;
+        foreach (var element in tab)
+            sum += element;
 
         return (double)sum / tab.Length;
     }
