@@ -9,7 +9,7 @@ internal class Class
         Console.WriteLine("Modyfikacja 2");
         Console.WriteLine("Modyfikacja 3");
 
-        int[] tab = { 1, 2, 3, 4 };
+        int[] tab = {1, 2, 3, 4};
         Console.WriteLine(Average(tab));
     }
 
@@ -21,5 +21,16 @@ internal class Class
             sum += i;
 
         return (double)sum / tab.Length;
+    }
+
+    public static int Max(int[] tab)
+    {
+        var result = tab[0];
+
+        foreach (var i in tab)
+            if (result < tab[i])
+                result = tab[i];
+
+        return result;
     }
 }
